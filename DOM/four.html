@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body style="background-color: black; color: wheat;">
+    
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
+</body>
+<script>
+
+    function addLanguage(langName){
+
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    // addLanguage('Ruby')
+    // addLanguage('python')
+
+
+    function addOptiLanguage(langName){
+         const li = document.createElement('li')
+         li.appendChild(document.createTextNode(langName))
+
+         document.querySelector('.language').appendChild(li)
+
+    
+    }
+    addOptiLanguage('Python')
+    addOptiLanguage('Ruby')
+
+
+    //Edit
+
+    const SecondLang = document.querySelector('li:nth-child(2)')
+    // SecondLang.innerHTML = " Mojo"
+
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo"
+
+    SecondLang.replaceWith(newLi)
+
+    //Edit
+
+    const firstLang = document.querySelector('li:nth-child(1)')
+    
+    const newliiii = document.createElement('li')
+    newliiii.textContent = "TypeScript"
+
+    firstLang.replaceWith(newliiii) 
+
+    // const firstLanggg = document.querySelector('li:first-child(1)')
+    // firstLanggg.outerHTML = '<li> Java </li>'
+
+    //Remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+
+
+
+</script>
+</html>
