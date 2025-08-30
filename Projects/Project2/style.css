@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#First{
+    text-align: center;
+    margin: 120px;
+    padding: auto;
+}
+button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#result{
+    margin: 20px;
+    padding: 20px;
+}
+#Weight-Guides{
+    margin: 20px 40px;
+}
