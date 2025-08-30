@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    background-color: #212121;
+    color: #fff;
+}
+.center{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    
+}
+#clock{
+    font-size: 20px;
+    background-color: orange;
+    padding: 20px 50px;
+    margin-top: 18px;
+    border-radius: 10px;
+}
