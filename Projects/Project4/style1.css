@@ -1,0 +1,133 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    padding: 30px;
+}
+
+/* Section Blocks */
+#wrapper, form, .resultParas {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Wrapper */
+#wrapper {
+    text-align: center;
+}
+
+#wrapper h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#wrapper p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Form */
+form {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+#guessField {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+#guessField:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 6px rgba(79,172,254,0.5);
+}
+
+#subt {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #4facfe;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#subt:hover {
+    background: #00c6ff;
+}
+
+/* Results */
+.resultParas {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.resultParas p {
+    margin: 10px 0;
+}
+
+.lowOrHi {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Feedback Colors */
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+.info {
+    color: #4facfe;
+}
+
+/* New Game Button */
+.button {
+    margin-top: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button h2 {
+    background: #ff6b6b;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.button h2:hover {
+    background: #ff4757;
+}
