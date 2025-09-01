@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs</title>
+</head>
+<style>
+    body {
+        background-color: #212121;
+    }
+
+    .card {
+        background-color: black;
+        height: 200px;
+        width: 180px;
+    }
+
+    #photo {
+        background-color: antiquewhite;
+        height: 70%;
+
+    }
+</style>
+
+<body>
+
+    <div class="card">
+        <div id="photo"></div>
+        <button id="button">Button</button>
+    </div>
+
+</body>
+<script>
+    const url = 'https://api.github.com/users/Saurabhtomer';
+    const xhr = new XMLHttpRequest();
+    console.log(url);
+
+    const data = JSON.parse(this.responseText)
+
+    xhr.open('GET', url);
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data);
+            console.log(data.followers);
+        }
+    }
+
+
+    xhr.send();
+</script>
+
+</html>
